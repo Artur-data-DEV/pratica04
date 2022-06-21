@@ -11,13 +11,13 @@ class CadastroActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.tbrCadastro))
         setTitle("Add new")
 
-        val botaoSalvar = findViewById<Button>(R.id.btnSalvar)
-        botaoSalvar.setOnClickListener {
+        val svButton = findViewById<Button>(R.id.btnSalvar)
+        svButton.setOnClickListener {
             finish()
         }
 
-        val botaoCancelar = findViewById<Button>(R.id.btnCancelar)
-        botaoCancelar.setOnClickListener {
+        val cancelButton = findViewById<Button>(R.id.btnCancelar)
+        cancelButton.setOnClickListener {
             finish()
         }
     }

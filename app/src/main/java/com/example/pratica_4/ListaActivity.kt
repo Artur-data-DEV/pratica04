@@ -16,11 +16,11 @@ class ListaActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_lista)
         setSupportActionBar(findViewById(R.id.tbrLista))
-        title = "My recipes"
+        title = "Championships"
 
-        val recipes = arrayOf("\nHamburger \nThe best burger recipe for summertime grilling.\n", "\nPizza \nAn easy pizza crust recipe that will hold all your favorite toppings.\n", "\nCaesar Salad \nYour new favorite caesar salad, thanks to one secret ingredient.\n", "\nHomemade rocky road ice cream \nHomemade rocky road ice cream is summer in a bowl.\n")
+        val champs = arrayOf("\Campeonato Brasileiro \nO maior campeonato do Brasil\n", "\nCampeonato Carioca \nCampeonato do Rio de Janeiro.\n", "\nChampions League \nMaior Campeonato da Europa\n")
         var adaptador = ArrayAdapter<String>(this,
-            android.R.layout.simple_list_item_1, recipes)
+            android.R.layout.simple_list_item_1, champs)
 
         val lista = findViewById<ListView>(R.id.lstLista)
         lista.adapter = adaptador
